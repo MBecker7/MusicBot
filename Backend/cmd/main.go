@@ -50,7 +50,7 @@ func main() {
 	//Default Route to Hello World function
 	router.HandleFunc("/{name}", greet.Greet)
 	router.HandleFunc("/login", login.Login)
-	router.HandleFunc("/login-sumbit", login.LoginSumbit)
+	router.HandleFunc("/login-submit", login.LoginSumbit)
 
 	server := http.Server{
 		Addr:    fmt.Sprintf(":%d", config.Port),
