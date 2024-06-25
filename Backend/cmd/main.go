@@ -58,6 +58,7 @@ func main() {
 	}
 
 	log.Println("Server listening on port :8080")
+	//err := server.ListenAndServeTLS("cert.pem", "key.pem")
 	err := server.ListenAndServe()
 	if err != nil {
 		log.Fatal(err)
